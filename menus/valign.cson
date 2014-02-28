@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable valign': 'valign:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'valign'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'valign:toggle' }
+      ]
+    ]
+  }
+]
