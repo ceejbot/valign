@@ -3,13 +3,21 @@
   "main": "./lib/valign",
   "version": "0.0.0",
   "private": true,
-  "description": "A short description of your package",
-  "activationEvents": ["valign:toggle"],
+  "description": "vertically align assignment statement blocks",
+  "activationEvents": [
+    "valign:align"
+  ],
   "repository": "https://github.com/atom/valign",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "must": "^0.11.0",
+    "mocha": "^1.17.1"
+  },
+  "scripts": {
+      "test": "mocha -R spec test.js"
   }
 }
